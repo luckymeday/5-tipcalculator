@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-border">
+      <p class="title">SPLI<br />TTER</p>
+
+      <div class="container">
+        <div class="left-container">
+          <!-- bill area -->
+          <div class="bill-area">
+            <div class="title-bill">Bill</div>
+            <input
+              class="input-bill"
+              type="text"
+              id="inputBill"
+              placeholder="0"
+              minlength="1"
+              required
+            />
+          </div>
+          <!-- tip area -->
+          <div class="select-area">
+            <div class="title-select">Select Tip %</div>
+            <ul class="select-list">
+              <div class="col">
+                <li class="select-item">5%</li>
+                <li class="select-item">10%</li>
+                <li class="select-item">15%</li>
+              </div>
+              <div class="col">
+                <li class="select-item">25%</li>
+                <li class="select-item">50%</li>
+                <li class="select-item">
+                  <input
+                    class="input-select"
+                    type="text"
+                    id="inputTip"
+                    placeholder="Custom"
+                    minlength="1"
+                    required
+                  />
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="people-area">
+            <div class="title-people">Number of People</div>
+            <input
+              class="input-people"
+              type="text"
+              id="inputPeople"
+              placeholder="0"
+              minlength="1"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="right-contaienr">
+          <div class="result-tip">
+            <div class="result-tip-title">
+              Tip Amount <br /><span class="small-letter"> / person </span>
+            </div>
+            <div class="calculated-tip" id="calculatedTip"></div>
+          </div>
+          <div class="result-total">
+            <div class="result-total-title">
+              Total <br /><span class="small-letter"> / person </span>
+            </div>
+            <div class="calculated-total" id="calculatedTotal"></div>
+          </div>
+          <div class="reset">Reset</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jeesun Lee</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
