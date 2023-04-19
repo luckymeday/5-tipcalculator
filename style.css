@@ -1,9 +1,22 @@
 .main-border {
+  font-family: "Space Mono", monospace;
   padding: 100px;
   text-align: center;
+  background-color: rgb(220, 233, 220);
+  height: 900px;
+}
+.title {
+  text-align: center;
+  /* position: relative; */
 }
 .container {
+  width: auto;
+  position: absolute;
   display: flex;
+  justify-content: space-evenly;
+  /* border: solid 1px red; */
+  background-color: white;
+  border-radius: 20px;
 }
 .left-container {
   text-align: left;
@@ -18,6 +31,7 @@
   background-color: lightgray;
   border: none;
   border-radius: 7px;
+  font-family: "Space Mono", monospace;
 }
 .select-area {
   text-align: left;
@@ -25,6 +39,7 @@
 }
 .select-list {
   list-style: none;
+  padding: 0;
 }
 .col {
   display: flex;
@@ -32,21 +47,27 @@
 }
 .select-item {
   text-align: center;
-  width: 70px;
-  height: 30px;
+  width: 80px;
+  height: 40px;
   margin: 10px;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   background-color: green;
   color: white;
+  font-size: large;
+  font-family: "Space Mono", monospace;
   border-radius: 7px;
+  border: none;
 }
-.input-select {
+.input-custom {
   width: 70px;
-  height: 30px;
+  height: 40px;
+  margin: 10px;
+  padding-left: 10px;
   border: none;
   background-color: lightgray;
-  color: green;
+  font-size: large;
   border-radius: 7px;
+  font-family: "Space Mono", monospace;
 }
 .people-area {
   padding: 20px;
@@ -58,39 +79,89 @@
   background-color: lightgray;
   border: none;
   border-radius: 7px;
+  font-family: "Space Mono", monospace;
+}
+.alert {
+  /* border: solid 1px red; */
+  color: red;
+  font-size: smaller;
 }
 .right-container {
-  display: flex;
-  /* padding-top: 100px; */
+  background-color: rgb(18, 63, 18);
+  /* border: solid 1px red; */
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-right: 10px;
 }
 .result-tip {
-  padding: 20px;
-  /* display: flex; */
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.result-tip-title {
+  color: white;
+  border: solid 1px red;
+  width: 100px;
+  margin-right: 1rem;
+  margin-left: 10px;
+  height: 3rem;
+  text-align: left;
 }
 .small-letter {
   font-size: 11px;
+  color: rgb(147, 166, 184);
 }
-.result-tip {
-  display: flex;
-  justify-content: flex-end;
-}
-.calculated-tip {
+.tip-per-person {
   width: 200px;
   border: 1px solid red;
+  color: rgb(182, 218, 182);
+  font-size: xx-large;
+  text-align: end;
+  height: 3rem;
 }
 .result-total {
   display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
-.calculated-total {
+.result-total-title {
+  color: white;
+  border: solid 1px red;
+  width: 100px;
+  margin-right: 1rem;
+  margin-left: 10px;
+  height: 3rem;
+  text-align: left;
+}
+.total-per-person {
   width: 200px;
   border: 1px solid red;
+  height: 3rem;
+  color: rgb(182, 218, 182);
+  font-size: xx-large;
+  text-align: end;
 }
-.reset {
-  margin-top: 80px;
-  width: 200px;
+.reset-area {
+  margin-top: 9rem;
+  /* margin-bottom: 1rem; */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* width: 100%; */
+  /* border: 1px solid red; */
+}
+.reset-button {
+  font-family: "Space Mono", monospace;
   height: 40px;
-  border: 1px solid red;
+  width: 100%;
+  text-align: center;
+  color: bisque;
+  background-color: cadetblue;
+  border-radius: 5px;
+  border: none;
+  font-size: large;
 }
 .attribution {
   font-size: 11px;
