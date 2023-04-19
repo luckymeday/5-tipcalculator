@@ -1,7 +1,6 @@
 function calculateTip() {
   var inputBill = document.getElementById("inputBill").value;
   console.log("input-bill :", inputBill);
-
   var selectTip = document.getElementById("selectTip").value;
   console.log("select-tip :", selectTip);
 
@@ -13,6 +12,7 @@ function calculateTip() {
 
   if (numOfPeople === "") {
     document.getElementById("alert").innerHTML = "Can't be zero";
+    document.getElementById("inputPeople").style.border = "3px solid red";
     return;
   } else document.getElementById("alert").innerHTML = "";
 
@@ -20,13 +20,15 @@ function calculateTip() {
   console.log("tip per person :", tipPerPerson);
 
   document.getElementById("tipPerPerson").style.color = "white";
-  document.getElementById("tipPerPerson").innerHTML = tipPerPerson;
+  document.getElementById("tipPerPerson").innerHTML =
+    "$" + tipPerPerson.toFixed(2);
 
-  var totalPerPerson = (inputBill * (1 + selectTip)) / numOfPeople / 10;
+  var totalPerPerson = inputBill / numOfPeople + tipPerPerson;
   console.log("total per person :", totalPerPerson);
 
   document.getElementById("totalPerPerson").style.color = "white";
-  document.getElementById("totalPerPerson").innerHTML = totalPerPerson;
+  document.getElementById("totalPerPerson").innerHTML =
+    "$" + totalPerPerson.toFixed(2);
 
   //   var totalPerPerson = console.log("tip per person :", tipPerPerson);
 }

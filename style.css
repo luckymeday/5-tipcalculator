@@ -6,8 +6,7 @@
   height: 900px;
 }
 .title {
-  text-align: center;
-  /* position: relative; */
+  color: rgb(66, 73, 66);
 }
 .container {
   width: auto;
@@ -32,6 +31,12 @@
   border: none;
   border-radius: 7px;
   font-family: "Space Mono", monospace;
+  font-size: 18px;
+}
+.input-bill:hover {
+  background-color: rgb(182, 201, 182);
+  border: solid 3px rgb(89, 173, 89);
+  color: darkgreen;
 }
 .select-area {
   text-align: left;
@@ -68,6 +73,12 @@
   font-size: large;
   border-radius: 7px;
   font-family: "Space Mono", monospace;
+  text-align: center;
+}
+.input-custom:hover {
+  background-color: rgb(182, 201, 182);
+  border: solid 3px rgb(89, 173, 89);
+  color: darkgreen;
 }
 .people-area {
   padding: 20px;
@@ -80,6 +91,7 @@
   border: none;
   border-radius: 7px;
   font-family: "Space Mono", monospace;
+  font-size: 18px;
 }
 .alert {
   /* border: solid 1px red; */
