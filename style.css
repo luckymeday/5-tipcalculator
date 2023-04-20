@@ -13,6 +13,7 @@
   position: absolute;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   /* border: solid 1px red; */
   background-color: white;
   border-radius: 20px;
@@ -62,6 +63,11 @@
   font-family: "Space Mono", monospace;
   border-radius: 7px;
   border: none;
+}
+
+.select-item:focus {
+  background-color: darkkhaki;
+  color: black;
 }
 .input-custom {
   width: 70px;
@@ -175,10 +181,10 @@
   border: none;
   font-size: large;
 }
-.attribution {
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */

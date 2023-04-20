@@ -1,14 +1,22 @@
 function calculateTip() {
   var inputBill = document.getElementById("inputBill").value;
   console.log("input-bill :", inputBill);
-  var selectTip = document.getElementById("selectTip").value;
-  console.log("select-tip :", selectTip);
+
+  var selectTip = document.getElementById("selectTip.value[]");
+  console.log("******select-tip :", selectTip);
 
   var customTip = document.getElementById("inputCustom").value / 100;
   console.log("input-custom-tip :", customTip);
 
   var numOfPeople = document.getElementById("inputPeople").value;
   console.log("number of people :", numOfPeople);
+
+  //   for (let i = 1; i <= 5; i++) {
+  //     let inputTip = document.getElementById("selectTip.value");
+  //     if (selectTip != null) inputTip = selectTip;
+  //     else inputTip = customTip;
+  //     console.log("inputTip :", selectTip);
+  //   }
 
   if (numOfPeople === "") {
     document.getElementById("alert").innerHTML = "Can't be zero";
