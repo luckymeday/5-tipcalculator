@@ -35,22 +35,22 @@
             <div class="title-select">Select Tip %</div>
             <ul class="select-list" seclected value="0">
               <div class="col">
-                <button class="select-item" id="selectTip" value="0.05"  onchange="calculateTip()">5%</button>
-                <button class="select-item" id="selectTip" value="0.1"  onchange="calculateTip()">10%</button>
-                <button class="select-item" id="selectTip" value="0.15"  onchange="calculateTip()">15%</button>
+                <button class="select-item" id="selectTip05" value="0.05"  onclick="selectTip05(0.05)">5%</button>
+                <button class="select-item" id="selectTip10" value="0.10" onclick="selectTip10(0.10)">10%</button>
+                <button class="select-item" id="selectTip15" value="0.15" onclick="selectTip15(0.15)">15%</button>
               </div>
               <div class="col">
-                <button class="select-item" id="selectTip" value="0.25"  onchange="calculateTip()">25%</button>
-                <button class="select-item"id="selectTip" value="0.50"  onchange="calculateTip()">50%</button>
+                <button class="select-item" id="selectTip25" value="0.25"  onclick="selectTip25(0.25)">25%</button>
+                <button class="select-item" id="selectTip50" value="0.50"  onclick="selectTip50(0.50)">50%</button>
               
                   <input
                     class="input-custom"
                     type="text"
-                    id="inputCustom"
+                    id="customTip"
                     placeholder="Custom"
                     minlength="1"
                     required
-                    onchange="calculateTip()"
+                    onchange="customTip()"
                   />
  
               </div>
@@ -91,12 +91,12 @@
       </div>
     </div>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Jeesun Lee</a>.
-    </div>
+    </div> -->
     <script src="script.js"></script>
   </body>
 </html>
