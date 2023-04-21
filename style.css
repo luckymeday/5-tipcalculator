@@ -3,20 +3,24 @@
   padding: 100px;
   text-align: center;
   background-color: rgb(220, 233, 220);
-  height: 900px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
 }
 .title {
   color: rgb(66, 73, 66);
 }
 .container {
-  width: auto;
-  position: absolute;
+  width: max-content;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   /* border: solid 1px red; */
   background-color: white;
   border-radius: 20px;
+  margin: auto;
 }
 .left-container {
   text-align: left;
@@ -181,10 +185,11 @@
   border: none;
   font-size: large;
 }
-/* .attribution {
+.attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: auto;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+}
