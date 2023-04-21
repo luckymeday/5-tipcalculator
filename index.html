@@ -20,7 +20,9 @@
           <!-- bill area -->
           <div class="bill-area">
             <div class="title-bill">Bill</div>
-            <input
+            <div>
+              <img src="./images/icon-dollar.svg" class="input-img">
+                <input
               class="input-bill"
               type="text"
               id="inputBill"
@@ -28,7 +30,9 @@
               minlength="1"
               required
               onchange="calculateTip()"
-            />
+            /> 
+            </div>
+          
           </div>
           <!-- tip area -->
           <div class="select-area">
@@ -59,7 +63,9 @@
           <div class="people-area">
             <div class="title-people">Number of People
               <span class="alert" id="alert"> </span></div>
-            <input
+             <div>
+              <img src="./images/icon-person.svg" class="input-img">
+              <input
               class="input-people"
               type="text"
               id="inputPeople"
@@ -67,7 +73,8 @@
               minlength="1"
               required
               onchange="calculateTip()"
-            />
+            /> </div>
+          
           </div>
         </div>
 

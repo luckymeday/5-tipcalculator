@@ -79,6 +79,8 @@ function reset() {
   console.log("after-reset-tip", inputTip);
   document.getElementById("customTip").value = "";
   document.getElementById("inputPeople").value = "";
+  document.getElementById("alert").innerHTML = "";
+  document.getElementById("inputPeople").style.border = "none";
   document.getElementById("tipPerPerson").innerHTML = "$0.00";
   document.getElementById("totalPerPerson").innerHTML = "$0.00";
 }

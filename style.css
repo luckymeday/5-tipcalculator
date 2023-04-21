@@ -28,7 +28,21 @@
 .bill-area {
   padding: 20px;
 }
+.input-img {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 9px;
+  /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg); */
+}
+
+.input-img path {
+  filter: red;
+}
 .input-bill {
+  /* background-image: url(./images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left; */
+  /* position: relative; */
   text-align: right;
   width: 100%;
   height: 30px;
@@ -37,6 +51,7 @@
   border-radius: 7px;
   font-family: "Space Mono", monospace;
   font-size: 18px;
+  color: #5a5a5a;
 }
 .input-bill:hover {
   background-color: rgb(182, 201, 182);
@@ -68,7 +83,6 @@
   border-radius: 7px;
   border: none;
 }
-
 .select-item:focus {
   background-color: darkkhaki;
   color: black;
@@ -94,6 +108,9 @@
   padding: 20px;
 }
 .input-people {
+  /* background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left; */
   text-align: right;
   width: 100%;
   height: 30px;
@@ -102,6 +119,7 @@
   border-radius: 7px;
   font-family: "Space Mono", monospace;
   font-size: 18px;
+  color: #5a5a5a;
 }
 .alert {
   /* border: solid 1px red; */
@@ -125,7 +143,7 @@
 }
 .result-tip-title {
   color: white;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   width: 100px;
   margin-right: 1rem;
   margin-left: 10px;
@@ -138,7 +156,7 @@
 }
 .tip-per-person {
   width: 200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color: rgb(182, 218, 182);
   font-size: xx-large;
   text-align: end;
@@ -151,7 +169,7 @@
 }
 .result-total-title {
   color: white;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   width: 100px;
   margin-right: 1rem;
   margin-left: 10px;
@@ -160,7 +178,7 @@
 }
 .total-per-person {
   width: 200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 3rem;
   color: rgb(182, 218, 182);
   font-size: xx-large;
