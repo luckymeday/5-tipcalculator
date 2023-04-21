@@ -22,6 +22,7 @@
   border-radius: 20px;
   margin: auto;
 }
+
 .left-container {
   text-align: left;
 }
@@ -210,4 +211,20 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (max-width: 375px) {
+  .main-border {
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container {
+    /* background-color: cadetblue; */
+    flex-direction: column;
+  }
+  .right-container {
+    margin: 10px;
+  }
 }
