@@ -53,6 +53,8 @@
   font-family: "Space Mono", monospace;
   font-size: 18px;
   color: #5a5a5a;
+  border: 3px solid white;
+  padding-right: 7px;
 }
 .input-bill:hover {
   background-color: rgb(182, 201, 182);
@@ -65,7 +67,7 @@
 }
 .select-list {
   list-style: none;
-  padding: 0;
+  padding: 0px;
 }
 .col {
   display: flex;
@@ -89,16 +91,17 @@
   color: black;
 }
 .input-custom {
-  width: 70px;
-  height: 40px;
+  width: 71.57px;
+  height: 33.58px;
   margin: 10px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   border: none;
   background-color: lightgray;
   font-size: large;
   border-radius: 7px;
   font-family: "Space Mono", monospace;
   text-align: center;
+  border: 3px solid lightgray;
 }
 .input-custom:hover {
   background-color: rgb(182, 201, 182);
@@ -121,6 +124,7 @@
   font-family: "Space Mono", monospace;
   font-size: 18px;
   color: #5a5a5a;
+  padding-right: 7px;
 }
 .alert {
   /* border: solid 1px red; */
