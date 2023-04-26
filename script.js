@@ -1,34 +1,24 @@
-var tip05 = 0,
-  tip10 = 0,
-  tip15 = 0,
-  tip25 = 0,
-  tip50 = 0;
-tipCustom = 0;
-var inputTip = 0;
+let tipCustom = 0;
+let inputTip = 0;
 
 function selectTip05() {
-  tip05 = 0.05;
-  inputTip = tip05;
+  inputTip = 0.05;
   console.log("1.tip05", inputTip);
 }
 function selectTip10() {
-  tip10 = 0.1;
-  inputTip = tip10;
+  inputTip = 0.1;
   console.log("2.tip10", inputTip);
 }
 function selectTip15() {
-  tip15 = 0.15;
-  inputTip = tip15;
+  inputTip = 0.15;
   console.log("3.tip15", inputTip);
 }
 function selectTip25() {
-  tip25 = 0.25;
-  inputTip = tip25;
+  inputTip = 0.25;
   console.log("4.tip25", inputTip);
 }
 function selectTip50() {
-  tip50 = 0.5;
-  inputTip = tip50;
+  inputTip = 0.5;
   console.log("5.tip50", inputTip);
 }
 function customTip() {
@@ -41,18 +31,19 @@ function calculateTip() {
   var inputBill = document.getElementById("inputBill").value;
   console.log("input-bill :", inputBill);
 
-  var numOfPeople = document.getElementById("inputPeople").value;
+  var numOfPeople = parseInt(document.getElementById("inputPeople").value);
   console.log("number of people :", numOfPeople);
 
   if (inputTip === "") {
     customTip = inputTip;
   }
 
-  if (numOfPeople === "") {
-    document.getElementById("alert").innerHTML = "Can't be zero";
+  if (!Number.isInteger(numOfPeople) || numOfPeople == 0) {
+    document.getElementById("alert").innerHTML = "Invalid number";
     document.getElementById("inputPeople").style.border = "3px solid red";
     return;
   } else document.getElementById("alert").innerHTML = "";
+  document.getElementById("inputPeople").style.border = "none";
 
   var tipPerPerson = (inputBill * inputTip) / numOfPeople;
   console.log("tip per person :", tipPerPerson);
